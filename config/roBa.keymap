@@ -13,7 +13,7 @@
 &trackball {
     //automouse-layer = <4>; //オートマウスレイヤ切る
 
-    scroll-layers = <5>;
+    scroll-layers = <2>; //numレイヤーでトラボ・スクロールを実現
 
     //ここからトラボにカーソル割り当て
     arrows {
