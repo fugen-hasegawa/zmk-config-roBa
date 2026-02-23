@@ -28,8 +28,7 @@
          wait-ms = <5>;
          tap-ms = <5>;
     };
-   //ここまでtap-ms = <5>;
-    // };
+   //ここまで
 };
 
 / {
@@ -90,7 +89,7 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
-        };
+        }; //ここまで
     };
 
     keymap {
@@ -105,7 +104,6 @@
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
-
             // sensor-bindings = <&scroll_up_down>; //sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
