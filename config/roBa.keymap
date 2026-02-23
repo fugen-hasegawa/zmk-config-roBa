@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-// #define ZMK_MOUSE_POINTING_SCRL_VAL 100 //ロータリーエンコーダにマウススクロールを当てる
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80  //ロータリーエンコーダにマウススクロールを当てる
 
 &mt {
@@ -11,7 +10,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    //automouse-layer = <4>; //オートマウスレイヤ切る
     scroll-layers = <5>;
 
     // arrows {
@@ -76,12 +75,6 @@
             tapping-term-ms = <200>;
         };
         //ロータリーエンコーダにマウススクロールを当てる
-//        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-//           compatible = "zmk,behavior-sensor-rotate";
-//           #sensor-binding-cells = <0>;
-//           bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-//          tap-ms = <20>;
-//       };
        encoder_msc_down_up: encoder_msc_down_up {
            compatible = "zmk,behavior-sensor-rotate";
            label = "ENCODER_MSC_DOWN_UP";
